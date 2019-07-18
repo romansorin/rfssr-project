@@ -29,7 +29,8 @@ const initializeApp = () => {
   app.use(cookieParser())
 
   app.use((req, res, next) => {
-    const initialState = (req.cookies && req.cookies.__session) ? JSON.parse(req.cookies.__session) : {}
+    const initialState = (req.cookies && req.cookies.__session) ? JSON.parse(req.cookies
+      .__session) : {}
     req.store = configureStore({
       initialState
     })
@@ -39,7 +40,9 @@ const initializeApp = () => {
   const manifestBase = isDev ? paths.manifest : paths.manifestLocal
   const manifestPath = `${manifestBase}/manifest.json`
 
-  app.use(manifestHelpers({ manifestPath }))
+  app.use(manifestHelpers({
+    manifestPath
+  }))
 
   app.use(serverRender())
 
@@ -52,18 +55,18 @@ const initializeApp = () => {
         // print a nicer stack trace by splitting line breaks and making them array items
         process.env.NODE_ENV === 'development' &&
         (err.stack || '')
-          .split('\n')
-          .map((line) => line.trim())
-          .map((line) => line.split(path.sep).join('/'))
-          .map((line) =>
-            line.replace(
-              process
-                .cwd()
-                .split(path.sep)
-                .join('/'),
-              '.'
-            )
+        .split('\n')
+        .map((line) => line.trim())
+        .map((line) => line.split(path.sep).join('/'))
+        .map((line) =>
+          line.replace(
+            process
+            .cwd()
+            .split(path.sep)
+            .join('/'),
+            '.'
           )
+        )
     })
   })
 

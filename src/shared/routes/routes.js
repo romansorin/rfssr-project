@@ -18,7 +18,7 @@ export default [{
         exact: true,
         component: Home,
         meta: {
-          title: 'Yawnch - React, Firebase, SSR',
+          title: 'RFSSR Users',
           description: 'An opinionated starting point for web applications.'
         }
       }, {

@@ -1,6 +1,7 @@
 {
   "projects": {
     "production": "yawnch-react-firebase-ssr",
-    "staging": "yawnch-react-firebase-ssr-staging"
+    "staging": "yawnch-react-firebase-ssr-staging",
+    "default": "rfssr-project"
   }
 }
