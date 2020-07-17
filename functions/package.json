@@ -22,7 +22,7 @@
     "firebase-functions": "^3.1.0",
     "history": "4.9.0",
     "js-cookie": "2.2.0",
-    "lodash": "4.17.14",
+    "lodash": "4.17.19",
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-aria-modal": "4.0.0",
