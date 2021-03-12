@@ -108,7 +108,7 @@
     "nodemon": "1.19.1",
     "plop": "2.4.0",
     "puppeteer": "1.18.0",
-    "react-dev-utils": "9.0.1",
+    "react-dev-utils": "11.0.4",
     "redux-mock-store": "1.5.3",
     "regenerator-runtime": "0.13.2",
     "rimraf": "2.6.3",
